@@ -1,0 +1,84 @@
+.home {
+	min-height: 100vh;
+
+	position: relative;
+	background-color: var(--clr-primary-1);
+	display: grid;
+	grid-auto-flow: column;
+	gap: 2rem;
+	justify-content: center;
+	align-content: center;
+}
+
+.shape {
+	transition: all 0.4s ease-in-out;
+	width: 40%;
+	height: 100%;
+	background-color: var(--clr-primary-2);
+	background-color: #fff;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+}
+
+.text_container {
+	// background-color: red;
+	text-align: center;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-content: center;
+}
+
+.logo {
+	width: 3rem;
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+}
+
+.image_container {
+	background-color: var(--clr-primary-3);
+	// background-color: #000;
+	height: 100%;
+	z-index: 2;
+	margin-left: 10%;
+	border-radius: 10px;
+}
+
+.profile_image {
+	object-fit: scale-down;
+}
+
+.navigation {
+	width: 10%;
+}
+
+.link {
+	color: red;
+}
+
+.text_container {
+	// background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	font-family: "Poppins";
+	font-weight: 700;
+	font-size: 32px;
+	color: #fff;
+	// background: darkgoldenrod;
+}
+
+.name {
+	color: var(--clr-primary-3);
+}

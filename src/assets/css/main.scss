@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/*****************         Resets             **************************/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+:root {
+	--clr-primary: #191d2b;
+	--clr-secondary: #27ae60;
+	--clr-white: #ffffff;
+	--clr-black: #000;
+	--clr-grey0: #f8f8f8;
+	--clr-grey-1: #dbe1e8;
+	--clr-grey-2: #b2becd;
+	--clr-grey-3: #6c7983;
+	--clr-grey-4: #454e56;
+	--clr-grey-5: #2a2e35;
+	--clr-grey-6: #12181b;
+	--br-sm-2: 14px;
+	--box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+
+	/* Colors */
+	--clr-primary-1: #085461;
+	--clr-primary-2: #57d0e6;
+	--clr-primary-3: #12c2e0;
+	--clr-primary-4: #255861;
+	--clr-primary-5: #0e95ad;
+}
+
+.light-mode {
+	--clr-primary: #ffffff;
+	--clr-secondary: #f56692;
+	--clr-white: #454e56;
+	--clr-black: #000;
+	--clr-grey0: #f8f8f8;
+	--clr-grey-1: #6c7983;
+	--clr-grey-2: #6c7983;
+	--clr-grey-3: #6c7983;
+	--clr-grey-4: #454e56;
+	--clr-grey-5: #f8f8f8;
+	--clr-grey-6: #12181b;
+}
