@@ -1,0 +1,64 @@
+.hamburger_container {
+	position: absolute;
+	top: 3rem;
+	right: 2rem;
+	z-index: 8;
+	padding: 0.9rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: var(--transition);
+
+	&:hover {
+		background-color: var(--clr-primary-3);
+
+		.line-top {
+			margin-bottom: 0.6rem;
+		}
+
+		.line-bottom {
+			margin-top: 0.6rem;
+		}
+	}
+}
+
+.lines {
+	width: 2.4rem;
+	height: 0.25rem;
+	background: #fff;
+}
+
+.line_top {
+	margin-bottom: 0.5rem;
+}
+
+.line_bottom {
+	margin-top: 0.5rem;
+}
+
+.modal_burger {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 6;
+	transition: var(--transition);
+	transform: translateY(-100%);
+}
+
+.transform_top {
+	transform: translateY(0.85rem) rotate(45deg);
+	margin-bottom: 0.6rem;
+}
+.transform_middle {
+	opacity: 0;
+}
+.transform_bottom {
+	transform: translateY(-0.85rem) rotate(-45deg);
+	margin-top: 0.6rem;
+}
+
+.display_modal {
+	transform: translateY(0%);
+}
