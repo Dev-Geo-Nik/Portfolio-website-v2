@@ -1,9 +1,11 @@
 
 const React = require("react")
 const {GameContextProvider} = require("./src/context/game/GameContext");
-
+const {ThemeProvider}  = require("./src/context/theme/ThemeContext");
 exports.wrapRootElement   = ({element}) =>{
-    return  <GameContextProvider > {element}</GameContextProvider>
+    
+    // return  <GameContextProvider ><ThemeProvider>{element}</ThemeProvider> </GameContextProvider>
+    return  <GameContextProvider >{element} </GameContextProvider>
 }
 
 

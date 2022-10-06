@@ -8,13 +8,13 @@ require('dotenv').config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    defaultTitle: `HOTBURGER`,
-    description: `HOTBURGER offers burger lovers a better more flavorful burger alternative usually only found in gourmet restaurants but at a fraction of the price. Fast and simple ordering process. Lighting fast delivery.`,
-    titleTemplate :`%s | HOTBURGER`,
-    author: `HOTBURGER`,
-    siteUrl: `https://hotburger-restaurant.netlify.app`,
+    defaultTitle: `George Nikolaidis`,
+    description: `Front-end developer portfolio website`,
+    titleTemplate :`George Nikolaidis | %s `,
+    author: `George Nikolaidis`,
+    siteUrl: `https://georgenikolaidis.com`,
     defaultImage:"",
-    twitterUsername:"hotburger-restaurant"
+    twitterUsername:"@username"
   },
   
   plugins: [

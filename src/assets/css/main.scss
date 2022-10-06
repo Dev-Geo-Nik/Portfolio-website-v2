@@ -85,23 +85,10 @@ select {
 	--clr-primary-3: #12c2e0;
 	--clr-primary-4: #255861;
 	--clr-primary-5: #0e95ad;
-
 	--clr-shape: #fff;
 	--clr-image-container: #0f879c;
-}
-
-.light-mode {
-	--clr-primary: #ffffff;
-	--clr-secondary: #f56692;
-	--clr-white: #454e56;
-	--clr-black: #000;
-	--clr-grey0: #f8f8f8;
-	--clr-grey-1: #6c7983;
-	--clr-grey-2: #6c7983;
-	--clr-grey-3: #6c7983;
-	--clr-grey-4: #454e56;
-	--clr-grey-5: #f8f8f8;
-	--clr-grey-6: #12181b;
+	--clr-name: #0bdaff;
+	--clr-text: #fff;
 }
 
 @keyframes animateName {

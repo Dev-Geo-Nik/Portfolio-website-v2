@@ -89,14 +89,12 @@
 	font-family: "Poppins";
 	font-weight: 700;
 	font-size: 32px;
-	color: #fff;
-	// background: darkgoldenrod;
+	color: var(--clr-text);
 }
 
 .name {
 	opacity: 0;
-	color: var(--clr-primary-3);
-	color: #0bdaff;
+	color: var(--clr-name);
 	animation: animateName 4s;
 	animation-delay: 0.4s;
 	animation-fill-mode: forwards;
@@ -237,7 +235,6 @@
 @media (max-width: 30em) {
 	.home {
 		display: flex;
-		// background-color: red;
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
