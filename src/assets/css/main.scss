@@ -63,7 +63,16 @@ textarea,
 select {
 	font: inherit;
 }
+// !this is reset for the extra wrappers from gatsby
+#___gatsby > * {
+	height: 100%;
+}
 
+// html,
+// body,
+// #___gatsby {
+
+// }
 :root {
 	// --clr-primary: #191d2b;
 	// --clr-secondary: #27ae60;
@@ -89,6 +98,7 @@ select {
 	--clr-image-container: #0f879c;
 	--clr-name: #0bdaff;
 	--clr-text: #fff;
+	--clr-project-bg: #2f7581c0;
 }
 
 @keyframes animateName {

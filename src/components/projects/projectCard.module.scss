@@ -1,0 +1,69 @@
+@use "../../assets/css//main.scss";
+
+.project_container {
+	animation-delay: 2s;
+	animation: animateName 2s;
+	width: 25rem;
+	height: 15rem;
+	background-color: blue;
+	border-radius: 10px;
+	height: 100%;
+	position: relative;
+}
+
+.project_container:hover {
+	.popup_container {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.image_container {
+	height: 100%;
+}
+
+.popup_container {
+	background-color: var(--clr-project-bg);
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.project_name {
+	font-family: "Poppins";
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.link_icon {
+	font-size: 1.8rem;
+	transition: all 0.5s ease-in-out;
+	color: #fff;
+	margin-right: 2rem;
+}
+.link_icon:hover {
+	color: var(--clr-primary-2);
+}
+.github_icon {
+	font-size: 1.8rem;
+	background-color: #000;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
+.github_icon:hover {
+	background-color: #fff;
+	color: #000;
+}

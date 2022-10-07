@@ -2,11 +2,9 @@ import React from "react";
 import * as styles from "./home.module.scss";
 
 // Libraries
-
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { FaGithubSquare, FaGithub, FaLinkedin, FaAdjust } from "react-icons/fa";
-import HamburgerMenu from "../HamburgerMenu";
 import Navbar from "../layout/Navbar";
 import Shape from "../Shape";
 

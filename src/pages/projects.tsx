@@ -6,7 +6,7 @@ const projects: React.FC = () => {
 	return (
 		<>
 			<SEO title="Projects" />
-			<Projects />;
+			<Projects />
 		</>
 	);
 };
