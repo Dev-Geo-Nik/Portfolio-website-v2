@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as styles from "./navbar.module.scss";
 import "../../assets/css/main.scss";
 import HamburgerMenu from "../HamburgerMenu";
@@ -10,17 +10,21 @@ import { StaticImage } from "gatsby-plugin-image";
 import { FaAdjust } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
-	const theme = localStorage.getItem("theme");
+	const isBrowser = typeof window !== "undefined";
 
-	if (theme) {
-		let parsedTheme = JSON.parse(theme);
+	if (isBrowser) {
+		const theme = localStorage.getItem("theme");
 
-		if (parsedTheme === "light") {
-			document.documentElement.style.cssText = defaultTheme;
-		}
+		if (theme) {
+			let parsedTheme = JSON.parse(theme);
 
-		if (parsedTheme == "dark") {
-			document.documentElement.style.cssText = darkTheme;
+			if (parsedTheme === "light") {
+				document.documentElement.style.cssText = defaultTheme;
+			}
+
+			if (parsedTheme == "dark") {
+				document.documentElement.style.cssText = darkTheme;
+			}
 		}
 	}
 
@@ -33,6 +37,7 @@ const Navbar: React.FC = () => {
 			console.log("run");
 			document.documentElement.style.cssText = darkTheme;
 			localStorage.setItem("theme", JSON.stringify("dark"));
+
 			return;
 		}
 		if (theme) {
@@ -42,6 +47,7 @@ const Navbar: React.FC = () => {
 		if (parsedTheme === "light") {
 			document.documentElement.style.cssText = darkTheme;
 			localStorage.setItem("theme", JSON.stringify("dark"));
+
 			return;
 		}
 		// default case
@@ -52,9 +58,11 @@ const Navbar: React.FC = () => {
 	};
 	return (
 		<>
-			<Link to="/">
-				<StaticImage src="../../assets/images/logo.png" alt="" placeholder="tracedSVG" className={styles.logo} />
-			</Link>
+			<div className={styles.logo_wrapper}>
+				<Link to="/">
+					<StaticImage src="../../assets/images/logo.png" alt="" placeholder="tracedSVG" className={styles.logo} />
+				</Link>
+			</div>
 			<FaAdjust className={styles.theme_icon} onClick={handlerClick} />
 			<HamburgerMenu />
 		</>

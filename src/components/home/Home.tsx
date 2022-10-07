@@ -47,12 +47,12 @@ const Home: React.FC = () => {
 			<nav className={styles.social}>
 				<ul className={styles.list}>
 					<li>
-						<a href="https://github.com/Dev-Geo-Nik" className={styles.link} target="_blank">
+						<a href="https://github.com/Dev-Geo-Nik" target="_blank">
 							<FaGithubSquare className={styles.githubIcon} />
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/georgios-nikolaidis-61b040211/" className={styles.link} target="_blank">
+						<a href="https://www.linkedin.com/in/george-nikolaidis-61b040211/" target="_blank">
 							<FaLinkedin className={styles.linkedinIcon} />
 						</a>
 					</li>

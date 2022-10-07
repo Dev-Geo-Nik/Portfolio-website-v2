@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
 					My <span className={styles.span_text}>Projects</span>
 				</h2>
 			</div>
-
+			{/* <h4 className={styles.section_title}>Full-Stack Apps</h4> */}
 			<section className={styles.projects_container}>
 				<ProjectCard
 					name="Hotburger"

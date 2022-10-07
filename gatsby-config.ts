@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     defaultTitle: `George Nikolaidis`,
     description: `Front-end developer portfolio website`,
     titleTemplate :`George Nikolaidis | %s `,
-    author: `George Nikolaidis`,
+    author: `George Nikolaidis front end developer `,
     siteUrl: `https://georgenikolaidis.com`,
     defaultImage:"",
     twitterUsername:"@username"

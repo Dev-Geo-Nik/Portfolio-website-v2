@@ -27,6 +27,13 @@
 	font-family: "Poppins";
 }
 
+.section_title {
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	font-family: "Poppins";
+}
+
 .span_text {
 	color: var(--clr-primary-2);
 }
@@ -45,4 +52,27 @@
 .image {
 	border-radius: 10px;
 	height: 100%;
+}
+
+// 485px -750px
+@media (min-width: 30.1em) and (max-width: 46.875em) {
+	.title_container {
+		padding-top: 2.8rem;
+	}
+	.title {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 30em) {
+	.title_container {
+		padding-top: 6rem;
+	}
+	.title {
+		color: var(--clr-primary-2);
+		font-size: 1.6rem;
+	}
+	.projects_container {
+		margin: 5rem 1rem 0 1rem;
+	}
 }

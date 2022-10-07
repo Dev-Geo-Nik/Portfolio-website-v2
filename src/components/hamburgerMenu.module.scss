@@ -62,3 +62,27 @@
 .display_modal {
 	transform: translateY(0%);
 }
+
+@media (min-width: 30.1em) and (max-width: 46.875em) {
+	.lines {
+		width: 2.4rem;
+		height: 0.25rem;
+	}
+
+	.hamburger_container {
+		top: 2.5rem;
+		right: 1rem;
+	}
+}
+
+@media (max-width: 30em) {
+	.lines {
+		width: 2.4rem;
+		height: 0.25rem;
+	}
+
+	.hamburger_container {
+		top: 1.8rem;
+		right: 1rem;
+	}
+}

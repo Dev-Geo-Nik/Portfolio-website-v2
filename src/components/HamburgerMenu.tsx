@@ -32,7 +32,7 @@ const HamburgerMenu: React.FC<Props> = ({ styles: st }) => {
 		<>
 			<div className={styles.hamburger_container} ref={hamburgerContainerRef} onClick={onClickHandler} style={st}>
 				<div className={isModalOpen ? `${styles.line_top} ${styles.lines} ${styles.transform_top}` : `${styles.line_top} ${styles.lines}`}></div>
-				<div className={isModalOpen ? `${styles.line_middle} ${styles.lines} ${styles.transform_middle}` : `${styles.line_middle} ${styles.lines}`}></div>
+				<div className={isModalOpen ? ` ${styles.lines} ${styles.transform_middle}` : ` ${styles.lines}`}></div>
 				<div className={isModalOpen ? `${styles.line_bottom} ${styles.lines} ${styles.transform_bottom}` : `${styles.line_bottom} ${styles.lines}`}></div>
 			</div>
 			<div className={isModalOpen ? `${styles.modal_burger} ${styles.display_modal}` : `${styles.modal_burger}`} ref={modalRef}>

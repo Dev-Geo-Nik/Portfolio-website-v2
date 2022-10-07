@@ -35,8 +35,9 @@
 .social {
 	position: absolute;
 	bottom: 2rem;
-	right: 40%;
-	left: 40%;
+	left: 50%;
+	transform: translate(-50%, 0);
+
 	animation: fadeInFromLeft 1s ease-in-out;
 }
 
@@ -45,16 +46,17 @@
 	display: flex;
 }
 
-.link {
-	// color: red;
-}
-
 .githubIcon {
 	font-size: 2.5rem;
 	background-color: #000;
 	color: #fff;
 	transition: all 0.5s ease-in-out;
 	margin-right: 1rem;
+}
+
+.githubIcon:hover {
+	background-color: #fff;
+	color: #000;
 }
 
 .linkedinIcon {
@@ -75,6 +77,7 @@
 	justify-content: center;
 	animation: fadeInFromTop 1s ease-in-out;
 	transform: translateY(0) scaleY(1);
+	// background-color: rgba(0, 0, 0, 0.12);
 }
 
 .title {
@@ -207,13 +210,18 @@
 // 760px 1024px
 @media (max-width: 64em) {
 	.home {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.title {
 		width: 90%;
 		font-size: 22px;
 	}
 	.image_container {
-		// width: 30%;
+		width: 20rem;
+		margin: 0;
 	}
 
 	.btn_cta {
@@ -222,7 +230,7 @@
 	}
 
 	.shape {
-		width: 50%;
+		width: 80%;
 	}
 }
 

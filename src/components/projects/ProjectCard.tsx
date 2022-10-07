@@ -16,15 +16,16 @@ const ProjectCard: React.FC<Props> = ({ imageElement, name, githubUrl, url }) =>
 			<div className={styles.image_container}>{imageElement}</div>
 			<div className={styles.popup_container}>
 				<h2 className={styles.project_name}>{name}</h2>
-				<div className={styles.icons_container}>
-					<a href={url} className={styles.link} target="_blank">
+				<div>
+					<a href={url} target="_blank">
 						<FaExternalLinkAlt className={styles.link_icon} />
 					</a>
-					<a href={githubUrl} className={styles.link} target="_blank">
+					<a href={githubUrl} target="_blank">
 						<FaGithubSquare className={styles.github_icon} />
 					</a>
 				</div>
 			</div>
+			{/* Tags */}
 		</div>
 	);
 };
