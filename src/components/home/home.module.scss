@@ -18,8 +18,7 @@
 .image_container {
 	background-color: var(--clr-image-container);
 	height: 100%;
-	// z-index: 2;
-	// margin-left: 3rem;
+
 	margin-left: 10%;
 	border-radius: 10px;
 	animation: fadeInFromTop 1s ease-in-out;
@@ -37,12 +36,10 @@
 	bottom: 2rem;
 	left: 50%;
 	transform: translate(-50%, 0);
-
 	animation: fadeInFromLeft 1s ease-in-out;
 }
 
 .list {
-	// height: 100%;
 	display: flex;
 }
 
@@ -247,9 +244,8 @@
 		font-size: 18px;
 	}
 	.image_container {
-		// height: 200px;
+		height: 220px;
 		margin: 0;
-		margin: 0 2rem;
 	}
 
 	.btn_cta {
