@@ -34,7 +34,6 @@ const Navbar: React.FC = () => {
 
 		// set the initial theme value ,run onces
 		if (localStorage.getItem("theme") === null) {
-			console.log("run");
 			document.documentElement.style.cssText = darkTheme;
 			localStorage.setItem("theme", JSON.stringify("dark"));
 
