@@ -59,6 +59,7 @@ const Navbar: React.FC = () => {
 		<>
 			<div className={styles.logo_wrapper}>
 				<Link to="/">
+					{/* <StaticImage src="../../assets/images/logo.png" alt="" placeholder="tracedSVG" className={styles.logo} /> */}
 					<StaticImage src="../../assets/images/logo.png" alt="" placeholder="tracedSVG" className={styles.logo} />
 				</Link>
 			</div>
