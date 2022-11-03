@@ -1,7 +1,7 @@
 @use "../assets/css/main.scss";
 
 .shape {
-	width: 40%;
+	width: 60%;
 	height: 100%;
 	background-color: var(--clr-shape);
 	position: absolute;
@@ -13,7 +13,7 @@
 // / 760px 1024px
 @media (max-width: 64em) {
 	.shape {
-		width: 50%;
+		width: 80%;
 	}
 }
 

@@ -13,9 +13,9 @@ const Home: React.FC = () => {
 		<section className={styles.home}>
 			<Navbar />
 			<Shape />
-			<div className={styles.image_container}>
+			{/* <div className={styles.image_container}>
 				<StaticImage src="../../assets/images/profil-image.png" alt="" placeholder="tracedSVG" className={styles.profile_image} objectFit="fill" />
-			</div>
+			</div> */}
 			<div className={styles.text_container}>
 				<h1 className={styles.title}>
 					Hi, I'm &nbsp;
@@ -47,12 +47,12 @@ const Home: React.FC = () => {
 			<nav className={styles.social}>
 				<ul className={styles.list}>
 					<li>
-						<a href="https://github.com/Dev-Geo-Nik" target="_blank">
+						<a href="https://github.com/dev-george-nikolaidis" target="_blank">
 							<FaGithubSquare className={styles.githubIcon} />
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/george-nikolaidis-61b040211/" target="_blank">
+						<a href="https://www.linkedin.com/in/dev-george-nikolaidis/" target="_blank">
 							<FaLinkedin className={styles.linkedinIcon} />
 						</a>
 					</li>
