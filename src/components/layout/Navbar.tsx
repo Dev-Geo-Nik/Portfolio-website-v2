@@ -4,8 +4,7 @@ import "../../assets/css/main.scss";
 import HamburgerMenu from "../HamburgerMenu";
 import { darkTheme, defaultTheme } from "../../util/Themes";
 import { Link } from "gatsby";
-import Logo from "../../assets/images/logo.png";
-
+import logo from "../../assets/images/logo.png";
 // libraries
 import { FaAdjust } from "react-icons/fa";
 
@@ -59,7 +58,7 @@ const Navbar: React.FC = () => {
 		<>
 			<div className={styles.logo_wrapper}>
 				<Link to="/">
-					<img src={Logo} alt="" />
+					<img src={logo} alt="" />
 				</Link>
 			</div>
 			<FaAdjust className={styles.theme_icon} onClick={handlerClick} />
