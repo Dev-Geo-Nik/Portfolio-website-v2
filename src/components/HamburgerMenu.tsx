@@ -12,7 +12,6 @@ const HamburgerMenu: React.FC<Props> = ({ styles: st }) => {
 	const modalRef = useRef<HTMLDivElement>(null);
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
-	// console.log(isModalOpen);
 	const isBrowser = typeof window !== "undefined";
 
 	if (!isModalOpen) {

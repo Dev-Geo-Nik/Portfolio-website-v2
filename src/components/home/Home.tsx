@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 						<li>i</li>
 						<li>s</li>
 					</span>
-					&nbsp; a front-end web developer."Welcome to my portfolio".
+					&nbsp; a full-stack web developer."Welcome to my portfolio".
 				</h1>
 				<Link to="/projects" className={styles.btn_cta}>
 					View my projects

@@ -5,6 +5,7 @@ import HamburgerMenu from "../HamburgerMenu";
 import { darkTheme, defaultTheme } from "../../util/Themes";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import Logo from "../../assets/images/logo.png";
 
 // libraries
 import { FaAdjust } from "react-icons/fa";
@@ -60,7 +61,9 @@ const Navbar: React.FC = () => {
 			<div className={styles.logo_wrapper}>
 				<Link to="/">
 					{/* <StaticImage src="../../assets/images/logo.png" alt="" placeholder="tracedSVG" className={styles.logo} /> */}
-					<StaticImage src="../../assets/images/logo.png" alt="" placeholder="tracedSVG" className={styles.logo} />
+					{/*!is the path wrong? at build assets go to public folder. */}
+					<StaticImage src={Logo} alt="" placeholder="tracedSVG" className={styles.logo} />
+					<img src={Logo} alt="" />
 				</Link>
 			</div>
 			<FaAdjust className={styles.theme_icon} onClick={handlerClick} />
