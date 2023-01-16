@@ -20,10 +20,10 @@
 	font-size: 3rem;
 	font-weight: 700;
 	color: #fff;
-	opacity: -1;
-	animation: animateName 1s;
-	animation-delay: 0;
-	animation-fill-mode: forwards;
+	opacity: 1;
+	// animation: animateName 1s;
+	// animation-delay: 0;
+	// animation-fill-mode: forwards;
 	font-family: "Poppins";
 }
 
@@ -40,7 +40,7 @@
 
 .projects_container {
 	margin: 5rem 3rem 0 3rem;
-	animation: fadeInFromLeft 1s ease-in-out;
+	// animation: fadeInFromLeft 1s ease-in-out;
 	display: grid;
 	gap: 2rem;
 	justify-content: center;
